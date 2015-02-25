@@ -25,7 +25,7 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
 
     if @item.save
-      redirect_to @item, notice: 'Item was successfully created.'
+      @items = Item.all
     else
       render :new
     end
