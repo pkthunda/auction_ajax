@@ -17,3 +17,29 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+var myVar = setInterval(function(){ setColor() }, 400);
+
+function setColor() {
+    var x = document.body;
+    x.style.backgroundColor = x.style.backgroundColor == "red" ? "magenta" : "red";
+}
+
+function stopColor() {
+    clearInterval(myVar);
+}
+
+
+
+
+// function loadlink(){
+//     $('#bid-show').load("Come on down to biscuiteville",function () {
+//       $(this).unwrap();
+//     });
+// }
+//
+// loadlink(); // This will run on page load
+//   setInterval(function(){
+//     loadlink() // this will run after every 5 seconds
+// }, 5000);
