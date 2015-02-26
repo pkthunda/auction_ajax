@@ -18,6 +18,7 @@
 
 $(function(){ $(document).foundation(); });
 
+// setInterval(function() {alert("RICKY BOBBY");}, 5000)
 
 var myVar = setInterval(function(){ setColor() }, 400);
 
@@ -33,8 +34,9 @@ function stopColor() {
 
 
 
+
 // function loadlink(){
-//     $('#bid-show').load("Come on down to biscuiteville",function () {
+//     $('#items').load("Come on down to biscuiteville",function () {
 //       $(this).unwrap();
 //     });
 // }

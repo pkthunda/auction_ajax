@@ -12,10 +12,19 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body onload="JavaScript:TimedRefresh(5000);">
     <div class="row">
       <%= yield %>
     </div>
 
   </body>
 </html>
+
+
+<script type="text/JavaScript">
+  function TimedRefresh( t ) {
+    setTimeout("location.reload(true);", t);
+  }
+</script>
+
+<p>Auto refresh every 5 seconds.</p>
